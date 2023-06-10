@@ -5,4 +5,4 @@ on:
 
 jobs:
   Reusable-caller-job:
-    uses: ./.github/workflows/maven.yml
+    uses: ./.github/workflows/maven-cache.yml
