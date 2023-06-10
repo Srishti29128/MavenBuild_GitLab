@@ -1,4 +1,4 @@
-name: Docker image Build Process
+name: docker image build Process
 
 on:
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
         with:
           username: srishti29128
           password: Sris@1623
-      - name: Build and push
+      - name: build and push
         uses: docker/build-push-action@v4
         with:
           context: .
