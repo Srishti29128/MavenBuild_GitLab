@@ -7,7 +7,7 @@ on:
 jobs:
   docker:
     env:
-     appName: "springboot-image1"
+     appName: "springboot-image"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,10 +26,10 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: srishti29128
-          password: dckr_pat_8yXcb0p1oIbiUlGffUlfH8hRiCAE
+          password: Sris@1623
       - name: build and push
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
-          tags: ${{ secrets.srishti29128 }}/${{ env.appName }}:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.appName }}:latest
