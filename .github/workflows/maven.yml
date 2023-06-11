@@ -26,7 +26,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: srishti29128
-          password: Sris@1623
+          password: dckr_pat_8yXcb0p1oIbiUlGffUlfH8hRiCAE
       - name: build and push
         uses: docker/build-push-action@v4
         with:
